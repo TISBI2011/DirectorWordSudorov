@@ -1,0 +1,27 @@
+﻿<Page x:Class="SudorovMA_Cinema.Pages.RegInPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SudorovMA_Cinema.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="RegInPage">
+
+    <Grid>
+
+        <PasswordBox PasswordChar="{Binding Password}" x:Name="PasswordTB" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="637,214,0,0" Width="120"/>
+        <TextBox Text="{Binding Name}" x:Name="FirstNameTB" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="640,41,0,0"/>
+        <TextBox Text="{Binding Nickname}" x:Name="NickTB" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="637,162,0,0"/>
+        <Label Content="Регистрация&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="636,0,0,0" FontSize="20" Height="36"/>
+        <Label Content="Имя&#xD;&#xA;&#xA;" HorizontalAlignment="Left" Margin="546,36,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.461,0.577" Height="47"/>
+        <Label Content="Ник&#xD;&#xA;" HorizontalAlignment="Left" Margin="546,162,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.461,0.577"/>
+        <Label Content="Пароль" HorizontalAlignment="Left" Margin="546,214,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.461,0.577"/>
+        <TextBox Text="{Binding Secondname}" x:Name="LastNameTB" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="640,86,0,0"/>
+        <TextBox Text="{Binding Patronymic}" x:Name="PatronymicTB" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="640,115,0,0"/>
+        <Label Content="Фамилия&#xA;" HorizontalAlignment="Left" Margin="546,68,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.461,0.577" Height="47"/>
+        <Label Content="Отчество&#xA;" HorizontalAlignment="Left" Margin="546,110,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.461,0.577" Height="47"/>
+        <Button x:Name="RegButton" Content="Зарегистрироваться&#xD;&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="640,252,0,0" Click="RegButton_Click"/>
+
+    </Grid>
+</Page>
